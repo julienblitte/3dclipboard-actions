@@ -14,6 +14,6 @@ Some scripts are extracted from public forum of the website from various authors
 All rights remains the property of their respective authors. 
 
 As the scripts were found on a public forum dedicated to code sharing, we can conclude that at least is it allowed to:
-- copyi and share script,
+- copy and share script,
 - use for private usage,
 - study the sourcecode (as the sourcecode comes with the script itself).
