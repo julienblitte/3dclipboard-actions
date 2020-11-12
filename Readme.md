@@ -13,7 +13,7 @@ Some scripts are extracted from public forum of the website from various authors
 # Legal warning
 All rights remains the property of their respective authors. 
 
-As the scripts were found on a public forum dedicated to code sharing, we can conclude that at least allowed rigths were:
-- copying and sharing are allowed,
-- and the private usage of the script is allowed,
-- and studying the sourcecode is allowed (as the sourcecode comes with the script itself).
+As the scripts were found on a public forum dedicated to code sharing, we can conclude that at least is it allowed to:
+- copyi and share script,
+- use for private usage,
+- study the sourcecode (as the sourcecode comes with the script itself).
