@@ -1,10 +1,9 @@
 // Author: Julien Blitte
 // Date: 2020-11-12
 
-var emails = Clipboard.Value.split(";");
+var emails = Clipboard.Value.replace(/[\r|\n|\t]+/, "").split(";");
 var contact_format = /^ *'?([^']+)'? *<([^>]+)>$/;
-var email_format = /^([^@]+)@(.+)\.([^.]+)$/;
-
+var email_format = /^'?([^'@]+)@(.+)\.([^.']+)'?$/;
 
 function cap(s)
 {
@@ -36,7 +35,7 @@ for(i=0; i < emails.length; i++)
 			names = match[1].split(/[\._]+/);
 		}
 
-		company = cap(match[2]);
+		company = cap(match[2]).trim();
 	}
 
 	while (names.length < 3)
@@ -46,7 +45,7 @@ for(i=0; i < emails.length; i++)
 
 	for(n=0; n < names.length; n++)
 	{
-		names[n] = cap(names[n]);
+		names[n] = cap(names[n]).trim();
 	}
 
 	result += names.join("\t") + "\t" + company + "\t" + email + "\r\n";
